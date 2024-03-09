@@ -1,0 +1,97 @@
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(205, 220, 233);
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.stopwatch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid;
+  border-radius: 30%;
+  background-color: rgb(205, 220, 233);
+  padding: 50px;
+}
+
+.display{
+  font-size: 5rem;
+  font-weight: bold;
+  color:gray;
+  margin-bottom: 25px;
+}
+
+.controls button{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin:5px;
+  border: none;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: background-color 0.5 ease ;
+}
+
+.start-btn{
+  background-color: rgb(35, 173, 35);
+}
+
+.start-btn:hover{
+  background-color: rgb(117, 224, 117);
+}
+
+.stop-btn{
+  background-color: red;
+}
+
+.stop-btn:hover{
+  background-color: rgb(202, 89, 81);
+}
+.reset-btn{
+  background-color: blue;
+}
+
+.reset-btn:hover{
+  background-color: rgb(98, 98, 169);
+}
+
+
+h1{
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .display {
+    font-size: 1.5rem;
+  }
+
+  .start-btn,
+  .stop-btn,
+  .reset-btn {
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .display {
+    font-size: 1rem;
+  }
+
+  .start-btn,
+  .stop-btn,
+  .reset-btn {
+    padding: 6px 12px;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
