@@ -1,10 +1,13 @@
 
 body{
+  min-height:100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(205, 220, 233);
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+   overflow-x: hidden;
+
 }
 
 .stopwatch{
@@ -12,9 +15,9 @@ body{
   flex-direction: column;
   align-items: center;
   border: 5px solid;
-  border-radius: 30%;
+  border-radius: 20%;
   background-color: rgb(205, 220, 233);
-  padding: 50px;
+  padding: 30px;
 }
 
 .display{
@@ -27,8 +30,7 @@ body{
 .controls button{
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 10px;
-  margin:5px;
+  margin:2px;
   border: none;
   border-radius: 10px;
   cursor:pointer;
@@ -72,7 +74,7 @@ h1{
   .start-btn,
   .stop-btn,
   .reset-btn {
-    padding: 8px ;
+    padding: 5px ;
   }
 }
 
@@ -84,9 +86,29 @@ h1{
   .start-btn,
   .stop-btn,
   .reset-btn {
-    padding: 6px ;
+    padding: 2px ;
   }
 }
+@media only screen and (max-width: 283px) {
+  
+.stopwatch{
+  width: 100%;
+  padding: 5px 0;
+}
+.display{
+  font-size: 16px;
+}
+.controls{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+    .start-btn,
+    .stop-btn,
+    .reset-btn {
+  width:100%;
+    }
+  }
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
